@@ -9,36 +9,37 @@
 </head>
 <body>
     <header>
-        <div class="cuotas">
-            <h1 class="h1">Bienvenidos a "Bazar del Chef" <link rel="stylesheet" href="style.css"></h1>
+        <div class="divlogo">
+            <a href="index.html"><img src="images/mockup/logom-09.png" class="minilogo" alt="logo mini."></a>
         </div>
 
-        <div class="cuotas">
-            <nav>
-                <ul>
-                    <li> <a class="nab" href="index.html">Inicio</a>  </li>
-                    <li> <a class="nab" href="informacion.html">Información</a>  </li>
-                    <li> <a class="nab" href="productos.html">Productos</a>  </li>
-                    <li> <a class="nab" href="ubicacion.html">Ubicación</a>  </li>
-                    <li> <a class="nab" href="contacto.html">Contacto</a>  </li>
-                </ul>
-            </nav>
+        <div class="nab">
+            <ul class="nab">
+            <li> <a class="nabhead" href="informacion.html">Información</a>  </li>
+            <li> <a class="nabhead" href="productos.html">Productos</a>  </li>
+            <li> <a class="nabhead" href="index.html">Inicio</a> </li>
+            <li> <a class="nabhead" href="ubicacion.html">Ubicación</a>  </li>
+            <li> <a class="nabhead" href="contacto.html">Contacto</a>  </li>
+            </ul>
         </div>
     </header>
-    <main>
-        <div class="cuotas">
-        <img style="height: 200px; width: 200px;" src="images/mockup/logoviogri-02.jpg" alt="Logo del Bazar.">
+
+    <main style="height: 50vh";>
+        <div>
+            <h1 style="color: #262626;">¡EL  BAZAR MÁS COMPLETO DE MENDOZA!</h1>
+            <div class="cuotas">
+                <h3 class="h3">¡Envíos a todo el país!</h3>
+                <h3 class="h3">¡Hasta 6 cuotas sin interés!</h3>
+            </div>
         </div>
+    </main>
+
+    <section class="promo">
         <div class="cuotas">
-            <h3 class="h3">¡Envíos a todo el país!</h3>
-            <h3 class="h3">¡Hasta 6 cuotas sin interés!</h3>
+            <h3 class="h3">NO TE PODES PERDER ESTAS PROMOS:</h3>
         </div>
 
-        <div class="cuotas">
-            <h3 class="h3">¡No te podés perder estas promos!</h3>
-        </div>
-
-        <div class="container">
+        <div class="promogrid">
             <div class="copas">
             <p>Copa para vino</p>
             <img src="images/productos/vino.jpg" class="copasimg" alt="Copas rellenas con vino tinto.">
@@ -52,21 +53,39 @@
             </div>
             
             <div class="copas">
-            <p>Termo individual Keep</p>
+            <p>Termo indiv. Keep</p>
             <img src="images/productos/termokeep.jpg" class="copasimg" alt="Termo-mate indivudal Keep color negro.">
             <p>$5.999,99</p>
             </div>
             
             <div class="copas">
-            <h4>Mate camionero</h4>
+            <p>Mate camionero</p>
             <img src="images/productos/mate.jpg" class="copasimg" alt="Mate camionero vacío.">
             <p>$4.999,99</p>
             </div>
         </div>
-    </main>
+    </section>
+
     <footer>
-        <p>Creado por Ignacio Tinelli.</p>
-        <a href="https://www.instagram.com/tinellignacio/?hl=es-la" class="violet">Instagram personal</a>
+        <div style="grid-area: contacto; text-align: end; margin-right: 5px;">
+            <p>Creado por Ignacio Tinelli.</p>
+            <a href="https://www.instagram.com/tinellignacio/?hl=es-la" class="violet">Instagram personal</a>
+        </div>
+
+        <div class="mail">
+            <h3 style="color: #262626"; font-size: 10px; margin-bottom: 5px;>No dudes en contactarnos:</h3> 
+            <input type="email" name="mail" placeholder="Escriba su mail..." class="mail2">
+        </div>
+
+        <div class="nabfoot">
+            <ul class="nabfoot">
+            <li> <a class="nabfoot" href="index.html">Inicio</a> </li>
+            <li> <a class="nabfoot" href="informacion.html">Información</a>  </li>
+            <li> <a class="nabfoot" href="productos.html">Productos</a>  </li>
+            <li> <a class="nabfoot" href="ubicacion.html">Ubicación</a>  </li>
+            <li> <a class="nabfoot" href="contacto.html">Contacto</a>  </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

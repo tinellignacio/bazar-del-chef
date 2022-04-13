@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital@0;1&display=swap");
-header, .divlogo, .containergrid, .nab {
+header, .divlogo, .ubica, .containergrid, main iframe, .nab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,9 +68,11 @@ footer {
 .footer__nab {
   grid-area: nav;
   display: grid;
-  justify-content: start;
   font-size: 14px;
   font-weight: bold;
+  border-color: #c6c6c6 !important;
+  color: #c6c6c6 !important;
+  text-align: center;
 }
 
 .contacto {
@@ -90,7 +92,7 @@ footer {
 }
 
 section {
-  height: 50vh;
+  height: 60vh;
   background: linear-gradient(0deg, #c6c6c6, #c2a0f2);
   text-align: center;
 }
@@ -106,7 +108,7 @@ section h3 {
   display: grid;
   margin: auto;
   width: 90vw;
-  height: 40vh;
+  height: 50vh;
   border-radius: 10px;
   grid-template-columns: 25% 25% 25% 25%;
   background-color: rgba(89, 18, 131, 0.15);
@@ -143,12 +145,9 @@ section h3 {
   height: 350px;
   width: 450px;
   background: linear-gradient(180deg, rgba(192, 192, 192, 0.3), rgba(89, 18, 131, 0.3));
-  padding: 20px;
   border-radius: 5px;
-  margin: 10px;
-  text-align: center;
-  box-sizing: border-box;
   box-shadow: 3px 1px 3px 1px #666666;
+  margin: auto;
 }
 
 .ubica:hover {
@@ -207,6 +206,10 @@ section h3 {
     grid-template-columns: 50% 50%;
     height: auto;
   }
+  .ubica {
+    height: 60%;
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -221,6 +224,9 @@ section h3 {
     font-size: 10px;
   }
   h5 {
+    font-size: 12px;
+  }
+  h3 {
     font-size: 12px;
   }
   p {
@@ -264,6 +270,11 @@ main h2 {
   font-weight: bold;
 }
 
+main h3 {
+  font-size: 22px;
+  color: #262626;
+}
+
 main h5 {
   font-size: 25px !important;
   color: #262626 !important;
@@ -278,8 +289,9 @@ main p {
   font-weight: bold;
 }
 
-h1 {
-  color: whitesmoke;
+main iframe {
+  width: 350px;
+  height: 300px;
 }
 
 p {

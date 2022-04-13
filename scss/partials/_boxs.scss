@@ -2,7 +2,7 @@
     display: grid;
     margin: auto;
     width: 90vw;
-    height: 40vh;
+    height: 50vh;
     border-radius: 10px;
     grid-template-columns: 25% 25% 25% 25%;
     background-color: rgba(89, 18, 131, 0.15);
@@ -36,19 +36,20 @@
 
 
 .ubica{
+    @extend %flex;
     height: 350px;
     width: 450px;
     background: linear-gradient(180deg, rgba(192, 192, 192, 0.3), rgba(89, 18, 131, 0.3));
-    padding: 20px;
     border-radius: 5px;
-    margin: 10px;
-    text-align: center;
-    box-sizing: border-box;
     box-shadow: 3px 1px 3px 1px rgb(102, 102, 102);
+    margin: auto;
 }
 .ubica:hover{
     box-shadow: 3px 1px 3px 1px rgb(77, 77, 77);
 }
+
+
+
 
 .containergrid{
     @extend %flex;

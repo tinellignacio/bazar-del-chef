@@ -34,9 +34,11 @@ footer {
     .footer__nab{
         grid-area: nav;
     display: grid;
-    justify-content: start;
     font-size: 14px;
     font-weight: bold;
+    border-color: #c6c6c6 !important;
+    color: #c6c6c6 !important;
+    text-align: center;
     }
 
 

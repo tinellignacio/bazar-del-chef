@@ -42,6 +42,10 @@
         grid-template-columns: 50% 50%;
         height: auto;
         }
+    .ubica{
+        height: 60%;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 568px){
@@ -56,6 +60,9 @@
         font-size: 10px;
     }
     h5{
+        font-size: 12px;
+    }
+    h3{
         font-size: 12px;
     }
     p{

@@ -1,0 +1,29 @@
+.header__nab{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    font-weight: bold;
+    border: solid 3px !important;
+    border-color: #c6c6c6 !important;
+    color: #c6c6c6 !important;
+}
+
+.header__nab:hover{
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+
+header {
+font-weight: bold;
+background-color: #262626fb;
+height: auto;
+@extend %flex;
+}
+
+.minilogo{
+    width: 5.5vw; 
+    height: auto; 
+}
+.divlogo{
+@extend %flex;
+}

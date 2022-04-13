@@ -1,0 +1,61 @@
+.promogrid{
+    display: grid;
+    margin: auto;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: rgba(89, 18, 131, 0.15);
+}
+
+.copas{
+    height: 220px;
+    width: 220px;
+    margin-bottom: 25px !important;
+    margin: auto;
+    margin-top: 25px !important;
+    background: linear-gradient(0deg, rgba(192, 192, 192, 0.3), rgba(89, 18, 131, 0.3));
+    padding: 20px !important;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 3px 1px 3px 1px rgb(102, 102, 102);
+    transition: all 0.3s ease;
+}
+.copas:hover{
+    box-shadow: 3px 1px 3px 1px rgb(77, 77, 77);
+    transform: scale(1.035, 1.035);
+}
+.copasimg
+{
+    height: 80% !important;
+    width: 80% !important;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.ubica{
+    height: 350px;
+    width: 450px;
+    background: linear-gradient(180deg, rgba(192, 192, 192, 0.3), rgba(89, 18, 131, 0.3));
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 3px 1px 3px 1px rgb(102, 102, 102);
+}
+.ubica:hover{
+    box-shadow: 3px 1px 3px 1px rgb(77, 77, 77);
+}
+
+.containergrid{
+    @extend %flex;
+    margin: auto;
+    background-color: rgba(89, 18, 131, 0.15);
+    width: 90vw;
+    height: 280px;
+    border-radius: 10px;
+
+}

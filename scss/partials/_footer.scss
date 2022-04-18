@@ -12,22 +12,34 @@ footer {
         h3{
             color: #ffffff; 
             font-size: 20px; 
-            margin-bottom: 5px !important;
+            margin-bottom: 5px;
+            @extend %flex;
         }
     }
     .mail2{
-        font-weight: bold;
+    font-weight: bold;
     width: 200px;
     height: 30px;
     margin-bottom: 5px;
-    text-align: start;
     box-shadow: 3px 1px 3px 1px rgb(0, 0, 0);
     transition: all 0.3s ease;
+    border-radius: 6px;
     }
     .mail2:hover{
         box-shadow: 3px 1px 3px 1px rgb(0, 0, 0);
         transform: translate(5px, 0px);
         color: #0d0d0d;
+    }
+    .boton{
+        margin-top: 5px;  
+        background-color: $color-principal; 
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+    .boton:hover{
+        color: #0d0d0d;
+        background-color: $color-principal; 
+        border-color: #0d0d0d;
     }
     
     
@@ -36,9 +48,10 @@ footer {
     display: grid;
     font-size: 14px;
     font-weight: bold;
-    border-color: #c6c6c6 !important;
-    color: #c6c6c6 !important;
-    text-align: center;
+    border-color: #c6c6c6;
+    color: #c6c6c6;
+    border: solid 2.5px;
+    border-radius: 7px;
     }
 
 

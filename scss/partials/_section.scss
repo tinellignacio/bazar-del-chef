@@ -2,6 +2,9 @@ section{
     height: 60vh;
     background: linear-gradient(0deg, #c6c6c6, $color-secundario);
     text-align: center;
+        h2{
+            font-weight: bold;
+        }
         h3{
             display: inline-block;
             color: #262626;

@@ -30,6 +30,11 @@ header {
   height: auto;
 }
 
+.burger {
+  color: #c6c6c6 !important;
+  border: solid 2.5px !important;
+}
+
 footer {
   display: grid;
   grid-template-areas: "nav mail contacto";
@@ -264,6 +269,14 @@ section h3 {
   }
   footer {
     font-size: 10px !important;
+  }
+  .ubica {
+    height: 250px;
+    width: 350px;
+  }
+  .ubicacion {
+    height: 200px;
+    width: 300px;
   }
 }
 

@@ -26,3 +26,8 @@ height: auto;
 .divlogo{
 @extend %flex;
 }
+
+.burger{
+    color: #c6c6c6 !important;
+    border: solid 2.5px !important;
+}

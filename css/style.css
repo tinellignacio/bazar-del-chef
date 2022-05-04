@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital@0;1&display=swap");
-header, .divlogo, .mail h3, .ubica, .containergrid, main iframe, .nab {
+header, .divlogo, .mail h3, main iframe, .ubica, .containergrid, .nab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,17 +11,21 @@ header, .divlogo, .mail h3, .ubica, .containergrid, main iframe, .nab {
   margin-right: 5px;
   font-weight: bold;
   border: solid 3.5px;
-  border-color: #c6c6c6 !important;
-  color: #c6c6c6 !important;
+  border-color: #f2f2f2 !important;
+  color: #f2f2f2 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header__nab:hover {
   font-weight: bold;
+  background-color: #f2f2f2;
+  color: #262626 !important;
 }
 
 header {
   font-weight: bold;
-  background-color: #262626fb;
+  background-color: #313e40;
   height: auto;
 }
 
@@ -30,16 +34,16 @@ header {
   height: auto;
 }
 
-.burger {
-  color: #c6c6c6 !important;
-  border: solid 2.5px !important;
-}
-
 footer {
   display: grid;
   grid-template-areas: "nav mail contacto";
   font-weight: bold;
-  background-color: #262626;
+  background-color: #313e40;
+}
+
+footer ul {
+  display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 .mail {
@@ -71,26 +75,26 @@ footer {
 
 .boton {
   margin-top: 5px;
-  background-color: #523181;
-  border-color: #ffffff;
-  color: #ffffff;
+  color: #f2f2f2;
+  background-color: #313e40;
+  border-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 .boton:hover {
-  color: #0d0d0d;
-  background-color: #523181;
-  border-color: #0d0d0d;
+  background-color: #c6c6c6;
+  border-color: #313e40;
+  color: #313e40;
 }
 
 .footer__nab {
-  grid-area: nav;
   display: grid;
   font-size: 14px;
   font-weight: bold;
   border-color: #c6c6c6;
   color: #c6c6c6;
-  border: solid 2.5px;
   border-radius: 7px;
+  text-transform: uppercase;
 }
 
 .contacto {
@@ -109,9 +113,44 @@ footer {
   transform: translate(5px, 0px);
 }
 
+main {
+  background-color: #f2f2f2;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+main h2 {
+  font-weight: bold;
+}
+
+main h3 {
+  font-size: 22px;
+  color: #262626;
+}
+
+main h5 {
+  font-size: 25px;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  font-weight: bold;
+}
+
+main p {
+  font-size: 15px;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  font-weight: bold;
+}
+
+main iframe {
+  width: 350px;
+  height: 300px;
+}
+
 section {
   height: 60vh;
-  background: linear-gradient(0deg, #c6c6c6, #c2a0f2);
+  background-color: #f2f2f2;
   text-align: center;
 }
 
@@ -133,7 +172,7 @@ section h3 {
   height: 40vh;
   border-radius: 10px;
   grid-template-columns: 25% 25% 25% 25%;
-  background-color: rgba(89, 18, 131, 0.15);
+  background-color: #8fa1a6;
 }
 
 .copas {
@@ -142,18 +181,19 @@ section h3 {
   margin-bottom: 25px;
   margin: auto;
   margin-top: 25px;
-  background: linear-gradient(180deg, rgba(192, 192, 192, 0.3), rgba(89, 18, 131, 0.3));
+  background: linear-gradient(0deg, #f2f2f2, #8fa1a6);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
   box-shadow: 2px 1px 1px 1px #666666;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .copas:hover {
   box-shadow: 2px 1px 1px 1px #4d4d4d;
-  transform: scale(1.015, 1.015);
+  transform: scale(1.035, 1.035);
 }
 
 .copasimg {
@@ -166,22 +206,29 @@ section h3 {
 .ubica {
   height: 350px;
   width: 450px;
-  background: linear-gradient(180deg, rgba(192, 192, 192, 0.3), rgba(89, 18, 131, 0.3));
+  background-color: #8fa1a6;
   border-radius: 5px;
   box-shadow: 3px 1px 3px 1px #666666;
   margin: auto;
+  transition: all 0.3s ease;
 }
 
 .ubica:hover {
   box-shadow: 3px 1px 3px 1px #4d4d4d;
+  transform: scale(1.025, 1.025);
 }
 
 .containergrid {
   margin: auto;
-  background-color: rgba(89, 18, 131, 0.15);
+  background-color: #8fa1a6;
   width: 90vw;
   height: 40vh;
   border-radius: 10px;
+}
+
+.socialmedia {
+  height: 6.5vh;
+  width: auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -232,6 +279,13 @@ section h3 {
     height: 60%;
     width: 70%;
   }
+  .socialmedia {
+    height: 5vh;
+    width: auto;
+  }
+  .mail2 {
+    width: 35vw;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -242,13 +296,16 @@ section h3 {
     text-align: center;
     flex-wrap: wrap;
   }
+  footer {
+    font-size: 8px !important;
+  }
+  footer ul {
+    grid-template-columns: 50% 50%;
+  }
   body {
     font-size: 10px;
   }
   h5 {
-    font-size: 12px;
-  }
-  h3 {
     font-size: 12px;
   }
   p {
@@ -267,9 +324,6 @@ section h3 {
     grid-template-columns: 100%;
     height: auto;
   }
-  footer {
-    font-size: 10px !important;
-  }
   .ubica {
     height: 250px;
     width: 350px;
@@ -277,6 +331,13 @@ section h3 {
   .ubicacion {
     height: 200px;
     width: 300px;
+  }
+  .mail2 {
+    height: 3.5vh;
+    width: 30vw;
+  }
+  .mail3 {
+    font-size: 6px;
   }
 }
 
@@ -289,39 +350,16 @@ section h3 {
   text-decoration: none !important;
 }
 
-main {
-  background: linear-gradient(0deg, #c6c6c6, #c2a0f2);
-  text-align: center;
-  width: auto;
-  height: auto;
-}
-
-main h2 {
+.info {
+  color: #313e40 !important;
+  border: inset 2px !important;
   font-weight: bold;
 }
 
-main h3 {
-  font-size: 22px;
-  color: #262626;
-}
-
-main h5 {
-  font-size: 25px;
-  color: #262626;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-  font-weight: bold;
-}
-
-main p {
-  font-size: 15px;
-  color: #262626;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-  font-weight: bold;
-}
-
-main iframe {
-  width: 350px;
-  height: 300px;
+.info:not(.collapsed) {
+  background-color: #313e40e1;
+  font-weight: normal;
+  color: #f2f2f2 !important;
 }
 
 p {
@@ -331,11 +369,11 @@ p {
 }
 
 .violet {
-  color: #c2a0f2;
+  color: #8fa1a6;
 }
 
 .violet:hover {
-  color: #523181;
+  color: #313e40;
 }
 
 .color {

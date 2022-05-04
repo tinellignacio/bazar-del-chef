@@ -46,6 +46,13 @@
         height: 60%;
         width: 70%;
     }
+    .socialmedia{
+        height: 5vh;
+        width: auto;
+    }
+    .mail2{
+        width: 35vw;
+    }
 }
 
 @media screen and (max-width: 568px){
@@ -56,15 +63,19 @@
         text-align: center;
         flex-wrap: wrap;
     }
+    footer{
+        font-size: 8px !important;
+        ul{
+            grid-template-columns: 50% 50%;
+        }
+    }
     body{
         font-size: 10px;
     }
     h5{
         font-size: 12px;
     }
-    h3{
-        font-size: 12px;
-    }
+
     p{
         font-size: 10px;
     }
@@ -81,9 +92,6 @@
         grid-template-columns: 100%;
         height: auto;
     }
-    footer{
-        font-size: 10px !important;
-    }
     .ubica{
         height: 250px;
         width: 350px;
@@ -91,5 +99,12 @@
     .ubicacion{
         height: 200px;
         width: 300px;
+    }
+    .mail2{
+        height: 3.5vh;
+        width: 30vw;
+    }
+    .mail3{
+        font-size: 6px;
     }
 }

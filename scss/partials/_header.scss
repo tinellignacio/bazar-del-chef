@@ -3,18 +3,22 @@
     margin-right: 5px;
     font-weight: bold;
     border: solid 3.5px;
-    border-color: #c6c6c6 !important;
-    color: #c6c6c6 !important;
+    border-color: #f2f2f2 !important;
+    color: #f2f2f2 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .header__nab:hover{
     font-weight: bold;
+    background-color: #f2f2f2;
+    color: #262626 !important;
 }
 
 
 header {
 font-weight: bold;
-background-color: #262626fb;
+background-color: $color-principal;
 height: auto;
 @extend %flex;
 }
@@ -27,7 +31,3 @@ height: auto;
 @extend %flex;
 }
 
-.burger{
-    color: #c6c6c6 !important;
-    border: solid 2.5px !important;
-}

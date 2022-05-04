@@ -1,10 +1,14 @@
 footer {
-    display: grid;
-    grid-template-areas: 
-    "nav mail contacto";
-    font-weight: bold;
-    background-color: #262626;
+display: grid;
+grid-template-areas: 
+"nav mail contacto";
+font-weight: bold;
+background-color: $color-principal;
+    ul{
+        display: inline-grid;
+        grid-template-columns: 25% 25% 25% 25%;
     }
+}
     
     .mail{
         grid-area: mail;
@@ -15,6 +19,7 @@ footer {
             margin-bottom: 5px;
             @extend %flex;
         }
+    
     }
     .mail2{
     font-weight: bold;
@@ -32,26 +37,26 @@ footer {
     }
     .boton{
         margin-top: 5px;  
+        color: #f2f2f2;
         background-color: $color-principal; 
-        border-color: #ffffff;
-        color: #ffffff;
+        border-color: #f2f2f2;
+        text-transform: uppercase;
     }
     .boton:hover{
-        color: #0d0d0d;
-        background-color: $color-principal; 
-        border-color: #0d0d0d;
+        background-color: #c6c6c6; 
+        border-color: $color-principal;
+        color: $color-principal;
     }
     
     
     .footer__nab{
-        grid-area: nav;
     display: grid;
     font-size: 14px;
     font-weight: bold;
     border-color: #c6c6c6;
     color: #c6c6c6;
-    border: solid 2.5px;
     border-radius: 7px;
+    text-transform: uppercase;
     }
 
 
@@ -70,3 +75,4 @@ footer {
             box-shadow: 3px 1px 3px 1px rgb(77, 77, 77);
             transform: translate(5px, 0px);
         }
+    
